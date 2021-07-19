@@ -1,0 +1,58 @@
+@keyframes turning {
+    0% {
+        border-radius: 0 0 0 0;
+        transform: rotate(0deg);
+        background-color: aqua;
+    }
+    12.5% {
+        border-radius: 50% 0 0 0;
+        transform: rotate(45deg);
+        background-color: cadetblue;
+    }
+    25% {
+        border-radius: 50% 50% 0 0;
+        transform: rotate(90deg);
+        background-color: darkcyan;
+    }
+    37.5% {
+        border-radius: 50% 50% 50% 0;
+        transform: rotate(135deg);
+        background-color: blue;
+    }
+    50% {
+        border-radius: 50% 50% 50% 50%;
+        transform: rotate(180deg);
+        background-color: blueviolet;
+    }
+    62.5% {
+        border-radius: 0 50% 50% 50%;
+        transform: rotate(225deg);
+        background-color: blue;
+    }
+    75% {
+        border-radius: 0 0 50% 50%;
+        transform: rotate(270deg);
+        background-color: darkcyan;
+    }
+    87.5% {
+        border-radius: 0 0 0 50%;
+        transform: rotate(315deg);
+        background-color: cadetblue;
+    }
+    100% {
+        border-radius: 0 0 0 0;
+        transform: rotate(360deg);
+        background-color: aqua;
+    }
+}
+div {
+    width: 120px;
+    height: 120px;
+    margin: 100px;
+    animation-name: turning;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
